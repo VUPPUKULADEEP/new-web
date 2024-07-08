@@ -1,2 +1,4 @@
-# new-web
-it is for making new websites
+follow the instructions 
+make a index.html file
+keep it as open
+
