@@ -1,6 +1,6 @@
 
 import viteLogo from '/vite.svg'
-import './App.css'
+
 import About from '../components/About'
 import Create from '../components/Create'
 import Home from '../components/Home'
@@ -12,8 +12,9 @@ function App() {
   return (
     <>
     <div className='App'>
+    <ResponsiveDrawer/>
       <Routes>
-        <Route path='' element={<ResponsiveDrawer/>}/>
+        <Route path='' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/create' element={<Create/>}/>
       </Routes>
