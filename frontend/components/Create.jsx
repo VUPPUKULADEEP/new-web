@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './About.css'
 const Create = () => {
   return (
-    <div>
+    <div className='container'>
       <p>hello create</p>
     </div>
   )

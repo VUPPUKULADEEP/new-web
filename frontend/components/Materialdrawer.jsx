@@ -18,10 +18,12 @@ import Typography from '@mui/material/Typography';
 import {Link ,useLocation} from 'react-router-dom';
 import CreateIcon from '@mui/icons-material/Create';
 
-const drawerWidth = 240;
+// const drawerWidth = 240;
 
 
-export default function ResponsiveDrawer() {
+export default function ResponsiveDrawer(props) {
+    const {drawerWidth} = props
+    const {content} = props
     const location = useLocation()
     const path = location.pathname
 
@@ -144,7 +146,7 @@ export default function ResponsiveDrawer() {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-
+          {content}
       </Box>
     </Box>
   );
