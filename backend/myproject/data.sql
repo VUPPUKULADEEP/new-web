@@ -125,7 +125,7 @@ CREATE TABLE `auth_user` (
 
 LOCK TABLES `auth_user` WRITE;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
-INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$870000$0XgE7S69M29RTTWPnHvqKH$g9aR07JCW/tMjXE7gn0W2kQsZC/e8YsW3B912ZzBjGk=','2025-01-31 13:29:47.676823',1,'1234','','','123@gmail.com',1,1,'2025-01-31 01:45:34.055889');
+INSERT INTO `auth_user` VALUES (1,'pbkdf2_sha256$870000$0XgE7S69M29RTTWPnHvqKH$g9aR07JCW/tMjXE7gn0W2kQsZC/e8YsW3B912ZzBjGk=','2025-02-07 01:00:01.503038',1,'1234','','','123@gmail.com',1,1,'2025-01-31 01:45:34.055889');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -294,7 +294,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('dizgz1zd5xtx9zvomrkck9rg02wvfqys','.eJxVjE0OwiAYBe_C2hAo8ACX7j0DAT6QqilJf1bGu2uTLnT7Zua9WIjb2sK2lDmMxM5MstPvlmJ-lGkHdI_TrfPcp3UeE98VftCFXzuV5-Vw_w5aXNq3drBCZA1AJzgldFJlkEQ5u-Kj9aoORhVPpgLeCkAZkg7I0qMaWPb-ALqqNqw:1tdr5f:JdGfM0YKRWr-RMqcGsEs7sJ6-Z2Ucucec3gGctLkJE8','2025-02-14 13:29:47.680311');
+INSERT INTO `django_session` VALUES ('0ftcpnzqmgsax2jy6dfr1wajadjdgfrr','.eJxVjE0OwiAYBe_C2hAo8ACX7j0DAT6QqilJf1bGu2uTLnT7Zua9WIjb2sK2lDmMxM5MstPvlmJ-lGkHdI_TrfPcp3UeE98VftCFXzuV5-Vw_w5aXNq3drBCZA1AJzgldFJlkEQ5u-Kj9aoORhVPpgLeCkAZkg7I0qMaWPb-ALqqNqw:1tgCiv:FlxTY8twrkTNGkHx9oJ6Aey76j81EwoAQ90osVJrcPg','2025-02-21 01:00:01.506177'),('dizgz1zd5xtx9zvomrkck9rg02wvfqys','.eJxVjE0OwiAYBe_C2hAo8ACX7j0DAT6QqilJf1bGu2uTLnT7Zua9WIjb2sK2lDmMxM5MstPvlmJ-lGkHdI_TrfPcp3UeE98VftCFXzuV5-Vw_w5aXNq3drBCZA1AJzgldFJlkEQ5u-Kj9aoORhVPpgLeCkAZkg7I0qMaWPb-ALqqNqw:1tdr5f:JdGfM0YKRWr-RMqcGsEs7sJ6-Z2Ucucec3gGctLkJE8','2025-02-14 13:29:47.680311');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -316,7 +316,7 @@ CREATE TABLE `myapp_project` (
   `modified` datetime(6) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -325,7 +325,7 @@ CREATE TABLE `myapp_project` (
 
 LOCK TABLES `myapp_project` WRITE;
 /*!40000 ALTER TABLE `myapp_project` DISABLE KEYS */;
-INSERT INTO `myapp_project` VALUES (3,'hi','2025-02-01','2025-02-19','working','still','2025-02-01 00:50:35.958628','2025-02-01 00:50:35.958642'),(4,'h','2025-02-01','2025-02-19','working','still','2025-02-01 00:51:39.849607','2025-02-01 00:51:39.849637'),(5,'hs','2025-02-18','2025-02-20','asedf','asdfasdfsd','2025-02-02 10:48:21.800752','2025-02-02 10:48:21.800769'),(6,'hsad','2025-02-18','2025-02-20','asedf','asdfasdfsd','2025-02-02 10:48:26.868404','2025-02-02 10:48:26.868418'),(7,'hid','2025-01-30','2025-02-26','adsadsff','asdfasfdasfdsd','2025-02-02 10:57:05.073822','2025-02-02 10:57:05.073852'),(8,'sdf','2025-01-30','2025-02-27','asdfda','afsdfasdsf','2025-02-02 11:01:51.570530','2025-02-02 11:01:51.570590'),(9,'skjfhalk','2025-02-12','2025-02-14','adsfaf','afasdf','2025-02-02 11:05:44.987311','2025-02-02 11:05:44.987398');
+INSERT INTO `myapp_project` VALUES (3,'hi','2025-02-01','2025-02-19','working','still','2025-02-01 00:50:35.958628','2025-02-01 00:50:35.958642'),(4,'h','2025-02-01','2025-02-19','working','still','2025-02-01 00:51:39.849607','2025-02-01 00:51:39.849637'),(5,'hs','2025-02-18','2025-02-20','asedf','asdfasdfsd','2025-02-02 10:48:21.800752','2025-02-02 10:48:21.800769'),(6,'hsad','2025-02-18','2025-02-20','asedf','asdfasdfsd','2025-02-02 10:48:26.868404','2025-02-02 10:48:26.868418'),(7,'hid','2025-01-30','2025-02-26','adsadsff','asdfasfdasfdsd','2025-02-02 10:57:05.073822','2025-02-02 10:57:05.073852'),(8,'sdf','2025-01-30','2025-02-27','asdfda','afsdfasdsf','2025-02-02 11:01:51.570530','2025-02-02 11:01:51.570590'),(9,'skjfhalk','2025-02-12','2025-02-14','adsfaf','afasdf','2025-02-02 11:05:44.987311','2025-02-02 11:05:44.987398'),(10,'asdfa','2025-02-20','2025-02-23','asdfasf','asdfdsafdasfas','2025-02-07 00:10:23.046193','2025-02-07 00:10:23.046218'),(11,'ht drsyr','2025-02-28','2025-02-07','szdfgadgfdag','asdgaagsdgasdg','2025-02-07 01:22:00.753909','2025-02-07 01:22:00.753935');
 /*!40000 ALTER TABLE `myapp_project` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -338,4 +338,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-02-02 18:58:15
+-- Dump completed on 2025-02-07  6:54:46
