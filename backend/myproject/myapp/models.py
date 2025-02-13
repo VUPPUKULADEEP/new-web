@@ -15,3 +15,11 @@ class Project(models.Model):
     def __str__(self):
         return self.name
     
+
+class Store(models.Model):
+    img = models.ImageField(upload_to='media')
+    name = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name
+    

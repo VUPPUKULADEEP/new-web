@@ -20,9 +20,9 @@ from .views import *
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('project', ProjectViewset, basename='project' )
-
-urlpatterns = router.urls
+router.register(r'project', ProjectViewSet, basename='project' )
+router.register(r'store',StoreViewSet, basename='Store' )
+urlpatterns = [*router.urls]
 
 
 # urlpatterns = [
